@@ -6,7 +6,7 @@ authors = ["Kristof Mattei <864376+Kristof-Mattei@users.noreply.github.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.13.1"
+python = "^3.13.2"
 requests = "^2.32.3"
 
 [build-system]
