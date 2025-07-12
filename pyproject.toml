@@ -1,14 +1,24 @@
-[tool.poetry]
+[project]
 name = "python-seed"
 version = "0.1.0"
-description = ""
-authors = ["Kristof Mattei <864376+Kristof-Mattei@users.noreply.github.com>"]
+description = "Python Seed project using UV, with vscode debugging defaults"
 readme = "README.md"
+authors = [
+    { name = "Kristof Mattei", email = "864376+Kristof-Mattei@users.noreply.github.com" },
+]
 
-[tool.poetry.dependencies]
-python = "^3.13.5"
-requests = "^2.32.4"
+requires-python = ">=3.13"
+dependencies = []
+
+[project.scripts]
+python-seed = "python_seed:main"
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = ["mypy>=1.16.1", "pytest>=8.4.1"]
+
+[tool.mypy]
+strict = true

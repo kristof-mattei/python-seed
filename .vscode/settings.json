@@ -1,3 +1,19 @@
 {
-  "python.analysis.extraPaths": ["python_seed"]
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    },
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true
+  },
+  "isort.args": [
+    "--profile",
+    "black"
+  ],
+  "mypy-type-checker.reportingScope": "workspace",
+  "python.testing.pytestArgs": [
+    "tests"
+  ],
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false
 }

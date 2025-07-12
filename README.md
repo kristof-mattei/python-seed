@@ -1,7 +1,19 @@
-Python Seed
+# Python Seed
 
-# Run with
+## Setup
+
+1. Ensure you have `uv` installed:
+
+https://docs.astral.sh/uv/getting-started/installation/
+
+## Run
 
 ```shell
-poetry run python -m python_seed
+uv run python-seed
+```
+
+## Test
+
+```shell
+uv run pytest
 ```
