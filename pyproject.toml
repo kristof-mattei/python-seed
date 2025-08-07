@@ -7,7 +7,7 @@ authors = [
     { name = "Kristof Mattei", email = "864376+Kristof-Mattei@users.noreply.github.com" },
 ]
 
-requires-python = ">=3.13.5"
+requires-python = ">=3.13.6"
 dependencies = []
 
 [project.scripts]
