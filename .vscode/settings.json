@@ -1,19 +1,15 @@
 {
+  "mypy-type-checker.reportingScope": "workspace",
   "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.codeActionsOnSave": {
       "source.organizeImports": "explicit"
     },
-    "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnSave": true
   },
-  "isort.args": [
-    "--profile",
-    "black"
-  ],
-  "mypy-type-checker.reportingScope": "workspace",
-  "python.testing.pytestArgs": [
-    "tests"
-  ],
+  "isort.args": ["--profile", "black"],
+  "python.analysis.extraPaths": [".venv/lib/site-packages"],
+  "python.testing.pytestArgs": ["tests"],
   "python.testing.pytestEnabled": true,
   "python.testing.unittestEnabled": false
 }
